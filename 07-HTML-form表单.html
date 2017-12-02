@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单</title>
+</head>
+<body>
+<!--
+form:表单标签
+常用属性:
+action:动作,即数据要提交的位置
+method:表单提交的方式,get.post
+get:在浏览器的地址栏中能看到表单提交的数据,
+格式为url?key=value&key1=value1等等;
+特点:安全级别较低,数据传输量有限
+post:特点:安全级别较高,数据传输量理论不受限制
+数据封装在http请求体中
+注意事项:
+如果想把表单中的某个输入框内容提交,则该输入框必须给定name属性;
+name定义的属性值对应表单提交问好后面的key,
+提交的value值取得是标签中的value属性
+<input placeholder:简单提示 >
+-->
+<!--
+fieldset:定义一系列属性集合,即把form表单这样的标签包裹起来
+legend:给这一系列标签设置一个标题
+-->
+
+<fieldset>
+    <legend>登录</legend>
+<form action="1.jsp" method="get">
+    <label >用户名:</label>
+    <input type="text" name="username" placeholder="请输入用户名">
+    <br><br>
+    密码:<input type="password" name="pwd" placeholder="请输入密码">
+    <input type="submit" value="登录">
+    <input type="reset" value="重置">
+
+
+
+
+
+</form>
+</fieldset>
+
+
+</body>
+</html>

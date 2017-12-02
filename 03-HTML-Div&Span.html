@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div$Span</title>
+</head>
+<body>
+<p>
+    html中的标签分成块级标签和行内标签
+    块级标签与行内标签最明显的区别是该标签是否能自动换行
+
+    块级标签:div.p.form.table.br.hr.
+    行内标签:span.input.
+</p>
+<!--style:设置当前div包裹的标签中的样式
+其中样式设置采用的模式是key:value的方式
+多个属性设置用分号隔开
+color:设置字体的颜色
+font-size:设置字体的大小-->
+<div style="color: aqua;font-size: 30px">
+    <p><em>div</em>div包裹的标签</p>
+    <input type="text" value="简单的输入框">
+
+</div>
+<!--
+<em>.<strong>都是强调标签,strong的强调程度会大于em的程度
+em标签字体是斜体,strong标签字体是加粗
+
+-->
+<span><strong>span</strong>span是一个行内标签,本身没有含义,不带任何样式</span>
+
+<div style="color: red";font-size="30px">
+    <p>我是简单文字</p>
+    <span style="color: aqua">我是div中的span</span>
+
+</div>
+
+</body>
+</html>

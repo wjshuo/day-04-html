@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table标签</title>
+</head>
+<body>
+<!--
+table:表格标签,定义一个表格
+常用属性:(在table标签尖括号里面定义的):
+border:边框线,线条宽度.线条颜色.线条样式(虚线/实线)
+cellspacing:单元格与单元格之间的间距
+cellpadding:单元格内容与边框的间距
+
+常用子标签(在<table  属性>子标签</table>中间包含的)
+<tr>:代表一行
+<td>代表一列
+<th>代表表头列,加强文字
+<caption>:代表表的名字,默认在表的最上面显示
+
+-->
+
+<table border="1px" bgcolor="aqua" cellspacing="5px"
+       cellpadding="10px">
+    <caption>表的名字</caption>
+    <thead>
+    <!--<tr>-->
+        <!--<th>姓名</th>-->
+        <!--<th>性别</th>-->
+    <!--</tr>-->
+
+    </thead>
+    <tbody style="color: blue;font-size: 20px">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <!--跨列colspan="20px"  跨行rowspan="20px"-->
+        <td >朔</td>
+        <td >男</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td>总结</td>
+        <td>1人</td>
+    </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
